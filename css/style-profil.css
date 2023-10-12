@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color:rgb(241, 215, 172) ;
+}
+
+
+/* Navbar Start */
+
+.navbar{
+    background-color: rgb(234, 189, 115);
+    display: flex;
+    position: fixed;
+    padding: 27px 6%;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(209, 150, 55);
+    z-index: 99999;
+}
+
+
+.navbar .navbar-logo{
+    color: rgb(156, 107, 28);
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+.navbar .navbar-logo span{
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar .navbar-nav a{
+    color: #fff;
+    font-size: 26px;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+
+.navbar .navbar-nav a:hover{
+    color: rgb(149, 103, 30);
+    background-color: rgb(237, 220, 195);
+    padding: 15px;
+    margin: 5px;
+    transition: 0.4s;
+    border-radius: 20px;
+} 
+
+
+
+.navbar #menu{
+    color: #fff;
+    display: none;
+}
+
+.navbar #menu:hover{
+    color: rgb(149, 103, 30);
+}
+
+
+/* Navbar End */
+
+
+
+/* Bio Section Start */
+
+.biodata{
+    height: 100vh;
+    position: relative;
+}
+
+.biodata .bio-saya{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 100px;
+}
+
+.biodata .bio-saya img{
+    width: 25%;
+    height: 420px;
+    margin: 0 auto;
+    border : 30px solid rgb(209, 150, 55);
+    padding: 50px;
+    margin: 30px;
+}
+
+.biodata .bio-saya .bio{
+    color:rgb(149, 103, 30);
+    width: 70%;
+    font-size: 30px;
+    border: 20px solid rgb(209, 150, 55);
+    padding: 169px 0;
+    text-align: center;
+}
+/* Bio Section End */
+
+
+
+/* Media Queries  */
+
+@media (max-width: 1055px){
+
+    .biodata .bio-saya img{
+        width: 250px;
+        height: 320px;
+        margin: 0 auto;
+        border : 20px solid rgb(209, 150, 55);
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .biodata .bio-saya .bio{
+        color:rgb(149, 103, 30);
+        font-size: 20px;
+        border: 15px solid rgb(209, 150, 55);
+        padding: 129px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width : 768px) {
+    html{
+        font-size: 75%;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        color: #fff;
+        width: 70%;
+        height: 100vh;
+        background-color:rgb(237, 220, 195) ;
+        transition: 0.4s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        display: block;
+        margin: 24px;
+        padding: 10px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color:rgb(149, 103, 30) ;
+        border-bottom: 3px solid rgb(149, 103, 30);
+        border-top: 3px solid rgb(149, 103, 30);
+        margin: 20px;
+    }
+
+    .navbar #menu{
+        display: block;
+    }
+
+
+    .biodata .bio-saya{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+
+@media (max-width : 576px) {
+    html{
+        font-size: 60%;
+    }
+
+    
+}

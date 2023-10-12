@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/style-DOM.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar">
+
+        <a href="#" class="navbar-logo">Iqbal<span>Dwi</span></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="layout.html">Layout</a>
+            <a href="DOM.html">DOM</a>
+        </div>
+
+        <a href="#" id="menu">
+            <i data-feather="menu"></i>
+        </a>
+
+    </nav>
+
+    <!-- Navbar End -->
+
+
+
+    <!-- ======================================================================================== -->
+
+    <!-- Banner Start -->
+
+    <div class="banner-DOM"></div>
+
+    <!-- Banner End -->
+
+    <!-- ======================================================================================== -->
+
+    <div class="content">
+        <div class="input">
+            <input type="text" id="colorInput">
+            <ul id="actionList">
+                <li>set list backColor</li>
+                <li>add new color to list</li>
+                <li>add footer</li>
+            </ul>
+        </div>
+        <div class="color">
+            <ul id="colorList">
+                <li>merah</li>
+                <li>biru</li>
+                <li>kuning</li>
+                <li>ungu</li>
+                <li>pink</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

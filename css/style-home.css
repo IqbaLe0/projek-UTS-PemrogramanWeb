@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* Navbar Start */
+
+.navbar{
+    background-color: rgb(234, 189, 115);
+    display: flex;
+    position: fixed;
+    padding: 27px 6%;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(209, 150, 55);
+    z-index: 99999;
+}
+
+
+.navbar .navbar-logo{
+    color: rgb(156, 107, 28);
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+.navbar .navbar-logo span{
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar .navbar-nav a{
+    color: #fff;
+    font-size: 26px;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+
+.navbar .navbar-nav a:hover{
+    color: rgb(149, 103, 30);
+    background-color: rgb(237, 220, 195);
+    padding: 15px;
+    margin: 5px;
+    transition: 0.4s;
+    border-radius: 20px;
+} 
+
+
+
+.navbar #menu{
+    color: #fff;
+    display: none;
+}
+
+.navbar #menu:hover{
+    color: rgb(149, 103, 30);
+}
+
+
+
+
+
+
+
+
+/* Navbar End */
+
+
+/* Banner Start */
+
+.banner-home{
+    margin-top: 95px;
+    height: 150px;
+    background-image: url(../img/banner.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Banner End */
+
+
+
+/* Daftar Film Start */
+
+.daftarFilm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+.film{
+    border-bottom: 5px solid rgb(149, 103, 30) ;
+    margin-bottom:10px ;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.film:hover {
+    transform: scale(1.1); 
+    transition: 0.3s ;
+    border-radius: 40%;
+}
+
+
+.film h1{
+    text-align: center;
+}
+
+.sinopsis{
+    transition: 0.4s;
+    display: none;
+    text-align: center;
+    margin: 0 70px;
+}
+
+/* Daftar Film End */
+
+
+
+
+
+
+
+
+
+/* Media Queries  */
+
+@media (max-width : 768px) {
+    html{
+        font-size: 75%;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        color: #fff;
+        width: 70%;
+        height: 100vh;
+        background-color:rgb(237, 220, 195) ;
+        transition: 0.5s;
+    }
+
+    /* Class active */
+    
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+    
+    /* Class active */
+
+    .navbar .navbar-nav a{
+        display: block;
+        margin: 24px;
+        padding: 10px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color:rgb(149, 103, 30) ;
+        border-bottom: 3px solid rgb(149, 103, 30);
+        border-top: 3px solid rgb(149, 103, 30);
+        margin: 20px;
+    }
+
+    .navbar #menu{
+        display: block;
+    }
+
+
+
+
+
+
+}
+
+
+@media (max-width : 576px) {
+    html{
+        font-size: 60%;
+    }
+}
